@@ -199,7 +199,7 @@ jobs:
                     git checkout $branch_name -- $conflict_file
                   else
                     echo "Fixing merge conflict: " $conflict_file
-                    bun ../sync-template-cli/src/index.ts $conflict_file
+                    # bun ../sync-template-cli/src/index.ts $conflict_file
                   fi
                 done
             fi
@@ -234,8 +234,8 @@ jobs:
           git commit -am "chore: sync template (with potential conflicts)" || true
 
           # Push changes and create PR
-          git push -f $original_remote "$pr_branch"
-          gh pr create --title "Sync ts-template repository (manual resolution required)" \
-                      --body "This pull request merges changes from the template repository. There may be conflicts that require manual resolution." \
-                      --head "$pr_branch" \
-                      --base development || true
+          # git push -f $original_remote "$pr_branch"
+          # gh pr create --title "Sync ts-template repository (manual resolution required)" \
+          #             --body "This pull request merges changes from the template repository. There may be conflicts that require manual resolution." \
+          #             --head "$pr_branch" \
+          #             --base development || true
