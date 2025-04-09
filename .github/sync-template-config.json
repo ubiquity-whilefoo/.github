@@ -4,10 +4,11 @@
     "target_branch": "development",
     "ai_model": "openai/gpt-4o-mini",
     "organizations": [
+        "ubiquity-whilefoo"
         
     ],
     "repositories": [
-        "ubiquity-whilefoo/partner.ubq.fi"
+        
     ],
     "whitelisted_files": [
         ".github/**",
