@@ -2,11 +2,12 @@
     "template_repository": "ubiquity/ts-template",
     "template_branch": "development",
     "target_branch": "development",
-    "ai_model": "anthropic/claude-3.7-sonnet",
+    "ai_model": "openai/gpt-4o-mini",
     "organizations": [
-        "ubiquity"
+        
     ],
     "repositories": [
+        "ubiquity-whilefoo/partner.ubq.fi"
     ],
     "whitelisted_files": [
         ".github/**",
